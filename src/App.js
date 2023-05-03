@@ -63,11 +63,11 @@ function App() {
   };
 
   const handleDeleteEmployee = (employee) => {
-    console.log("delete clicked, employeeId", employee)
+    // console.log("delete clicked, employeeId", employee)
     const updatedEmployees = playlist.filter(
       (e) => e.id !== employee.id
     );
-    console.log("updatedEmployees", updatedEmployees)
+    // console.log("updatedEmployees", updatedEmployees)
     setPlaylist(updatedEmployees);
     setSelectedEmployee(null);
   };
