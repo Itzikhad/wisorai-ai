@@ -5,7 +5,7 @@
     text-align: center;
     padding: 1rem;
   }
-    
+
 .employee-profile {
     max-width: 800px;
     margin: 0 auto;
@@ -57,5 +57,10 @@
   .employee-details .detail-row p {
     font-size: 1.2rem;
     margin: 0;
+  }
+
+  .employee-footer {
+    background-color: lightgray;
+    margin: 5px;
   }
   

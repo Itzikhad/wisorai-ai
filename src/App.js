@@ -64,8 +64,8 @@ function App() {
   // const [employees, setEmployees] = useState(data);
 
   const handleEditEmployee = (employeeId, updatedEmployee) => {
-    console.log("edit clicked employeeId", employeeId)
-    console.log("edit clicked updatedEmployee", updatedEmployee)
+    // console.log("edit clicked employeeId", employeeId)
+    // console.log("edit clicked updatedEmployee", updatedEmployee)
     // const updatedEmployees = playlist.map((employee) =>
     //   employee.id === employeeId ? updatedEmployee : employee
     // );
@@ -73,8 +73,8 @@ function App() {
     // setSelectedEmployee(updatedEmployee);
   };
   const handleUpdatedEmployee = (employeeId, updatedEmployee) => {
-    console.log("edit clicked employeeId", employeeId)
-    console.log("edit clicked updatedEmployee", updatedEmployee)
+    // console.log("edit clicked employeeId", employeeId)
+    // console.log("edit clicked updatedEmployee", updatedEmployee)
     const updatedEmployees = playlist.map((employ) =>
       employ.id === employeeId ? updatedEmployee : employ
     );

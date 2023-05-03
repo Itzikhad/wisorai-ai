@@ -11,7 +11,7 @@ const EmployeeProfile = ({ employee, onEditClick, onDeleteClick, onUpdateClick }
         const { name, value } = event.target;
         setUpdatedEmployee((prevEmployee) => {
             prevEmployee = prevEmployee ? prevEmployee : employee
-            return { ...prevEmployee, [name]: value }
+            return { ...employee, [name]: value }
         });
     }
 
