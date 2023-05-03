@@ -38,7 +38,7 @@ export const UserContext = createContext();
 function App() {
   const [playlist, setPlaylist] = useState(employeesJSON);
   const [allEmployees, setAllEmployees] = useState(employeesJSON);
-  const [selectedEmployee, setSelectedEmployee]  = useState(null);
+  const [selectedEmployee, setSelectedEmployee] = useState(null);
   // const [selectedEmployee, setSelectedEmployee]  = useState(employeeData);
 
   // const [employees, setEmployees] = useState(data);
@@ -52,6 +52,15 @@ function App() {
     // setPlaylist(updatedEmployees);
     // setSelectedEmployee(updatedEmployee);
   };
+  const handleUpdatedEmployee = (employeeId, updatedEmployee) => {
+    console.log("edit clicked employeeId", employeeId)
+    console.log("edit clicked updatedEmployee", updatedEmployee)
+    const updatedEmployees = playlist.map((employ) =>
+      employ.id === employeeId ? updatedEmployee : employ
+    );
+    setPlaylist(updatedEmployees);
+    setSelectedEmployee(updatedEmployee);
+  };
 
   const handleDeleteEmployee = (employee) => {
     console.log("delete clicked, employeeId", employee)
@@ -64,14 +73,14 @@ function App() {
   };
 
   return (
-    <UserContext.Provider value={{playlist, setPlaylist, selectedEmployee, setSelectedEmployee, allEmployees }}>
+    <UserContext.Provider value={{ playlist, setPlaylist, selectedEmployee, setSelectedEmployee, allEmployees }}>
       <div className="App">
-        <div direction='row' style={{ justifyContent: 'center', alignContent: 'center', padding: '2px', height: '30%', overflow: 'auto'}}>
-          <EmployeeList employees={playlist}/>
+        <div direction='row' style={{ justifyContent: 'center', alignContent: 'center', padding: '2px', height: '30%', overflow: 'auto' }}>
+          <EmployeeList employees={playlist} />
         </div>
-          <Grid item xs={8} sx={{ padding: "5px", margin: '5px', justifyContent: 'center' }}>
-            <EmployeeProfile employee={selectedEmployee} onEditClick={handleEditEmployee} onDeleteClick={handleDeleteEmployee} />
-          </Grid>
+        <Grid item xs={8} sx={{ padding: "5px", margin: '5px', justifyContent: 'center' }}>
+          <EmployeeProfile employee={selectedEmployee} onEditClick={handleEditEmployee} onDeleteClick={handleDeleteEmployee} onUpdateClick={handleUpdatedEmployee} />
+        </Grid>
       </div>
     </UserContext.Provider>
   );
