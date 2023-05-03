@@ -1,0 +1,173 @@
+[
+{
+    "city_id": 524901,
+    "dt": 1682275451,
+    "temp": 285.27,
+    "temp_min": 283.23,
+    "temp_max": 287.39,
+    "humidity": 46,
+    "city_name": "Moscow",
+    "city_timezone": 10800
+},
+{
+    "city_id": 1850144,
+    "dt": 1682275456,
+    "temp": 285.53,
+    "temp_min": 284.15,
+    "temp_max": 286.27,
+    "humidity": 25,
+    "city_name": "Tokyo",
+    "city_timezone": 32400
+},
+{
+    "city_id": 3435910,
+    "dt": 1682275307,
+    "temp": 294.04,
+    "temp_min": 293,
+    "temp_max": 296.48,
+    "humidity": 63,
+    "city_name": "Buenos Aires",
+    "city_timezone": -10800
+},
+{
+    "city_id": 2643743,
+    "dt": 1682275147,
+    "temp": 283.4,
+    "temp_min": 281.05,
+    "temp_max": 285.35,
+    "humidity": 76,
+    "city_name": "London",
+    "city_timezone": 3600
+},
+{
+    "city_id": 4164138,
+    "dt": 1682275260,
+    "temp": 302.49,
+    "temp_min": 300.93,
+    "temp_max": 305.37,
+    "humidity": 68,
+    "city_name": "Miami",
+    "city_timezone": -14400
+},
+{
+    "city_id": 3128760,
+    "dt": 1682275202,
+    "temp": 294.12,
+    "temp_min": 290.88,
+    "temp_max": 295.78,
+    "humidity": 55,
+    "city_name": "Barcelona",
+    "city_timezone": 7200
+},
+{
+    "city_id": 1609350,
+    "dt": 1682275765,
+    "temp": 303.16,
+    "temp_min": 303.09,
+    "temp_max": 305.89,
+    "humidity": 83,
+    "city_name": "Bangkok",
+    "city_timezone": 25200
+},
+{
+    "city_id": 293396,
+    "dt": 1682275389,
+    "temp": 292.94,
+    "temp_min": 291.08,
+    "temp_max": 293.29,
+    "humidity": 68,
+    "city_name": "Tel Aviv",
+    "city_timezone": 10800
+},
+{
+    "city_id": 1816670,
+    "dt": 1682275249,
+    "temp": 279.09,
+    "temp_min": 279.09,
+    "temp_max": 279.09,
+    "humidity": 41,
+    "city_name": "Beijing",
+    "city_timezone": 28800
+},
+{
+    "city_id": 5128581,
+    "dt": 1682275494,
+    "temp": 292.36,
+    "temp_min": 289.79,
+    "temp_max": 294.29,
+    "humidity": 46,
+    "city_name": "New York",
+    "city_timezone": -14400
+},
+{
+    "city_id": 2147714,
+    "dt": 1682275142,
+    "temp": 290.59,
+    "temp_min": 287.23,
+    "temp_max": 292.24,
+    "humidity": 76,
+    "city_name": "Sydney",
+    "city_timezone": 36000
+},
+{
+    "city_id": 2988507,
+    "dt": 1682275200,
+    "temp": 285.44,
+    "temp_min": 283.85,
+    "temp_max": 286.62,
+    "humidity": 85,
+    "city_name": "Paris",
+    "city_timezone": 7200
+},
+{
+    "city_id": 6173331,
+    "dt": 1682275256,
+    "temp": 283.4,
+    "temp_min": 281.9,
+    "temp_max": 284.39,
+    "humidity": 85,
+    "city_name": "Vancouver",
+    "city_timezone": -25200
+},
+{
+    "city_id": 2464461,
+    "dt": 1682275286,
+    "temp": 299.04,
+    "temp_min": 299.04,
+    "temp_max": 299.04,
+    "humidity": 36,
+    "city_name": "Tunisia",
+    "city_timezone": 3600
+},
+{
+    "city_id": 1701668,
+    "dt": 1682275374,
+    "temp": 302.48,
+    "temp_min": 302.07,
+    "temp_max": 302.66,
+    "humidity": 75,
+    "city_name": "Manila",
+    "city_timezone": 28800
+},
+{
+    "city_id": 993800,
+    "dt": 1682275208,
+    "temp": 289.8,
+    "temp_min": 289.25,
+    "temp_max": 289.9,
+    "humidity": 40,
+    "city_name": "Johannesburg",
+    "city_timezone": 7200
+},
+{
+    "city_id": 2800866,
+    "dt": 1682275781,
+    "temp": 282.85,
+    "temp_min": 282.13,
+    "temp_max": 283.64,
+    "humidity": 90,
+    "city_name": "Brussels",
+    "city_timezone": 7200
+    
+    }
+]

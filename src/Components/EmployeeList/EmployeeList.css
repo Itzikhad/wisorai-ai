@@ -1,0 +1,21 @@
+/* EmployeeList.css */
+
+.container {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  
+  .header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  
+  .employee-list {
+    max-height: 500px;
+    overflow-y: scroll;
+    margin-top: 16px;
+  }
+  
