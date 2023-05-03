@@ -12,7 +12,7 @@ function EmployeeList({ employees }) {
   };
 
   const getSubordinatesCount = (employeeId) => {
-    return context.playlist.filter((employ) => employ.manager_id === employeeId).length;
+    return context.allEmployees.filter((employ) => employ.manager_id === employeeId).length;
   };
 
   return (

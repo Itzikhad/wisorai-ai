@@ -1,7 +1,8 @@
 import React from 'react';
 import './EmployeeProfile.css';
+import Button from '@mui/material/Button';
 
-const EmployeeProfile = ({ employee }) => {
+const EmployeeProfile = ({ employee, onEditClick, onDeleteClick }) => {
     if (!employee) {
         return <div className="no-data">No data available</div>;
     }
@@ -41,6 +42,15 @@ const EmployeeProfile = ({ employee }) => {
                     <label>Bio:</label>
                     <p>{bio}</p>
                 </div>
+            </div>
+
+            <div className="employee-footer">
+                <Button variant="contained"  onClick={() => onEditClick(employee)} sx={{margin: '5px', backgroundColor: '#757575'}}>
+                    Edit
+                </Button>
+                <Button variant="contained"  onClick={() => onDeleteClick(employee)} sx={{margin: '5px', backgroundColor: '#757575'}}>
+                    Delete
+                </Button>
             </div>
         </div>
     );

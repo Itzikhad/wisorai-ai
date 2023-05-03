@@ -37,17 +37,40 @@ export const UserContext = createContext();
 
 function App() {
   const [playlist, setPlaylist] = useState(employeesJSON);
+  const [allEmployees, setAllEmployees] = useState(employeesJSON);
   const [selectedEmployee, setSelectedEmployee]  = useState(null);
   // const [selectedEmployee, setSelectedEmployee]  = useState(employeeData);
 
+  // const [employees, setEmployees] = useState(data);
+
+  const handleEditEmployee = (employeeId, updatedEmployee) => {
+    console.log("edit clicked employeeId", employeeId)
+    console.log("edit clicked updatedEmployee", updatedEmployee)
+    // const updatedEmployees = playlist.map((employee) =>
+    //   employee.id === employeeId ? updatedEmployee : employee
+    // );
+    // setPlaylist(updatedEmployees);
+    // setSelectedEmployee(updatedEmployee);
+  };
+
+  const handleDeleteEmployee = (employee) => {
+    console.log("delete clicked, employeeId", employee)
+    const updatedEmployees = playlist.filter(
+      (e) => e.id !== employee.id
+    );
+    console.log("updatedEmployees", updatedEmployees)
+    setPlaylist(updatedEmployees);
+    setSelectedEmployee(null);
+  };
+
   return (
-    <UserContext.Provider value={{playlist, setPlaylist, selectedEmployee, setSelectedEmployee }}>
+    <UserContext.Provider value={{playlist, setPlaylist, selectedEmployee, setSelectedEmployee, allEmployees }}>
       <div className="App">
         <div direction='row' style={{ justifyContent: 'center', alignContent: 'center', padding: '2px', height: '30%', overflow: 'auto'}}>
           <EmployeeList employees={playlist}/>
         </div>
           <Grid item xs={8} sx={{ padding: "5px", margin: '5px', justifyContent: 'center' }}>
-            <EmployeeProfile employee={selectedEmployee} />
+            <EmployeeProfile employee={selectedEmployee} onEditClick={handleEditEmployee} onDeleteClick={handleDeleteEmployee} />
           </Grid>
       </div>
     </UserContext.Provider>
