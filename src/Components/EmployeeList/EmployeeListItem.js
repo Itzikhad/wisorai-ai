@@ -2,7 +2,7 @@ import React from 'react';
 import './EmployeeListItem.css';
 
 function EmployeeListItem(props) {
-  const { employee, onItemClick } = props;
+  const { employee, onItemClick, numSubordinates } = props;
 
   return (
     <div className="employee" onClick={() => onItemClick(employee)}>
@@ -12,6 +12,9 @@ function EmployeeListItem(props) {
       <div className="employee-details">
         <div className="employee-name">{`${employee.first_name} ${employee.last_name}`}</div>
         <div className="employee-email">{employee.email}</div>
+        {numSubordinates !== null && (
+          <div className="employee-subordinates">{numSubordinates} employees report to {employee.first_name}</div>
+        )}
       </div>
     </div>
   );
