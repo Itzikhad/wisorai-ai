@@ -5,6 +5,26 @@ import './App.css';
 import EmployeeProfile from './Components/EmployeeProfile/EmployeeProfile';
 import employeesJSON from './data/employees.json';
 import EmployeeList from './Components/EmployeeList/EmployeeList';
+// import { createTheme } from '@mui/material/styles';
+
+// const theme = createTheme({
+//   palette: {
+//     primary: {
+//       main: '#90caf9',
+//     },
+//     secondary: {
+//       main: '#f48fb1',
+//     },
+//     background: {
+//       default: '#424242',
+//       paper: '#616161',
+//     },
+//     text: {
+//       primary: '#ffffff',
+//       secondary: '#f5f5f5',
+//     },
+//   },
+// });
 
 const employeeData = {
   "id": 15196,
